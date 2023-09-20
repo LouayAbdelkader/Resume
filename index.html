@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cv</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js"></script>
+</head>
+
+<body>
+    <div class="resumeContainer">
+        <div class="side-left">
+            <div class="avatar">
+                <img src="./assets/louay.jpg" alt="" id="avatar"><br><br>
+                <label for="pic">Upload a Photo</label>
+                <input type="file" id="pic" onchange="upload()" />
+
+            </div>
+
+            <div class="Cordonnées">
+                <div class="title">
+                    <h3><i class="bi bi-bar-chart-line-fill"></i> Cordonnées </h3>
+                </div>
+
+                <div class="containerCord">
+                    <h4>
+                        <div class="icon"><i class="bi bi-telephone"></i></div> +216<span id="tel">22795484</span>
+                        <i class="bi bi-pen-fill modify" title="modify" onclick="Mod1()"></i>
+                    </h4>
+
+                    <h4>
+                        <div class="icon"><i class="bi bi-envelope"></i></div>
+                        <span id="Spanmail">louayyabdelkader@gmail.com</span>
+                        <i class="bi bi-pen-fill modify" title="modify" onclick="Mod2()"></i>
+                    </h4>
+
+                    <h4>
+                        <div class="icon"><i class="bi bi-signpost"></i></div><span id="Adr">Megrine, Tunis</span>
+                        <i class="bi bi-pen-fill modify" title="modify" onclick="Mod3()"></i>
+                    </h4>
+                </div>
+            </div>
+
+            <div class="education" id="ed">
+                <div class="title">
+                    <h3><i class="bi bi-mortarboard"></i> Education <span onclick="addEdu()" class="ed"><i
+                                class="bi bi-plus"></i></span>
+                    </h3>
+                </div>
+
+                <div class="containerEdu" id="containerEdu">
+                    <h4>Bac Informatique (2021-2022)</h4>
+                </div>
+            </div>
+
+            <div class="interest">
+                <div class="title">
+                    <h3><i class="bi bi-controller"></i> <i class="bi bi-music-note-list"></i> Loisirs <span
+                            onclick="addInte()" class="ed"><i class="bi bi-plus"></i></span>
+                    </h3>
+                </div>
+
+                <div containerInterest>
+                    <ul class="InteList">
+                        <li>Gaming</li>
+                        <li>Photography</li>
+                        <li>Music</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="side-right">
+            <div class="nameContainer">
+                <div class="name">
+                    <h3 id="name">Abdelkader Louay</h3> <i class="bi bi-pen-fill" title="modify"
+                        onclick="ModName()"></i>
+                </div>
+                <p id="profession">Front-end Developer</p>
+            </div>
+
+            <div class="aboutme">
+                <div class="title blocright">
+                    <h3> <i class="bi bi-file-earmark-person-fill"></i> Profile
+                        <i class="bi bi-pen-fill" title="modify" onclick="ModP()"></i>
+                    </h3>
+                </div>
+
+                <p id="profile">
+                    Je m'appelle Louay Abdelkader, un développeur passionné qui a récemment commencé à explorer le
+                    design et la photographie. J'aime combiner mes compétences techniques avec ma créativité pour créer
+                    des applications attrayantes et conviviales.
+                </p>
+            </div>
+
+            <div class="Expr">
+                <div class="title blocright">
+                    <h3><i class="bi bi-person-workspace"></i> Experiences <span onclick="addExp()" class="ed"><i
+                                class="bi bi-plus"></i></span>
+                    </h3>
+                </div>
+                <table id="table">
+                    <tr>
+                        <th>Experience</th>
+                        <th>Date</th>
+                    </tr>
+                    <tr>
+                        <td>Stage d'initiation</td>
+                        <td>01/01/2023 jusqu'a 02/02/2023</td>
+                    </tr>
+                    <tr>
+                        <td>Isetch.Google Club</td>
+                        <td>12/09/2022 jusqu'a présent</td>
+                    </tr>
+                </table><br>
+            </div>
+            <div class="Skills">
+                <div class="title blocright">
+                    <h3><i class="bi bi-star-fill"></i> Skills <span onclick="addSkill()" class="ed">
+                            <i class="bi bi-plus"></i></span>
+
+                    </h3>
+                    <div id="skills">
+                        <div id="skill">
+                            <p> HTML 5</p>
+                            <div id="prog"> <progress value="95" max="100"></progress>
+                                <p>%95</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

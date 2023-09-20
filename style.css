@@ -1,0 +1,177 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: -apple-system, Nunito, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.resumeContainer {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgba(43, 23, 51, 0.24) 0px 3px 8px;
+}
+
+.side-left {
+    background: #212026;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+
+}
+
+.side-right {
+    width: 500px;
+}
+
+.avatar {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.avatar img {
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+}
+
+h4 {
+    font-weight: 400;
+    padding-top: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.title {
+    border-bottom: 2px solid white;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.containerEdu {
+    text-align: center;
+    margin-bottom: 1px;
+}
+
+.containerEdu h4 {
+    margin-bottom: -10px;
+}
+
+.icon {
+    text-align: center;
+    padding-top: 4px;
+    position: relative;
+    top: -5px;
+}
+
+.icon,
+.ed {
+    background: #f79d1e;
+    transition: ease-in .4s;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.icon:hover,
+span:hover {
+    transition: ease-in .4s;
+    border-radius: 12px;
+}
+
+.containerCord h4 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -15px;
+}
+
+#Spanmail {
+    font-size: 15px;
+    font: bold;
+    position: relative;
+    top: 2px;
+}
+
+.modify:hover {
+    cursor: pointer;
+    transition: ease-in .3s;
+    color: rgb(208, 36, 36);
+}
+
+.name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nameContainer {
+    background: #f0c993;
+    position: relative;
+    top: 5vh;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.nameContainer p {
+    position: relative;
+    top: -15px;
+}
+
+.aboutme {
+    position: relative;
+    top: 24px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#ab {
+    font-weight: lighter;
+}
+
+.blocright {
+    border-bottom: 2px solid black;
+}
+
+.Expr {
+    position: relative;
+    top: 24px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+i {
+    cursor: pointer;
+}
+
+th,
+td,
+tr {
+    text-align: center;
+    padding: 15px;
+}
+
+input[type=file] {
+    display: none;
+}
+
+label {
+    color: black;
+    background-color: #f0c993;
+    border-radius: 8px;
+    padding: 7px 6px !important;
+    cursor: pointer;
+}
+
+#skill {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#prog {
+
+    display: flex;
+    align-items: center;
+}
